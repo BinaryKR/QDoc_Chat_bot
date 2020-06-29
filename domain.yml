@@ -1,0 +1,182 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- request_restaurant:
+    use_entities: []
+- chitchat:
+    use_entities: []
+- inform
+- affirm
+- deny
+- stop
+- thankyou
+- greet
+- bot_challenge
+- agree
+- disagree
+- corona
+- gangdong
+- dentist
+- dencate1
+- dencate2
+- dencate3
+- dencate4
+- dendate
+- dencorrect1
+- dencorrect2
+- dencorrectcate
+- densymp1
+- densymp2
+- densymp3
+- densymp4
+- tooth
+- dermatology
+- wlsfy
+- qndnl
+- enemfjrl
+- dermacate3
+- dermacate2
+- dermacate1
+- dermacate1-1
+- dermacate1-2
+- inputdate
+- inputtime
+- submitDone
+entities:
+- cuisine
+- number
+- feedback
+- seating
+- name
+- age
+- id
+- gender
+- disease
+- medicine
+- user_name
+- subject
+slots:
+  age:
+    type: unfeaturized
+  cuisine:
+    type: unfeaturized
+    auto_fill: false
+  date:
+    type: text
+  disease:
+    type: unfeaturized
+  feedback:
+    type: unfeaturized
+    auto_fill: false
+  gender:
+    type: unfeaturized
+  id:
+    type: unfeaturized
+  medicine:
+    type: unfeaturized
+  name:
+    type: unfeaturized
+  num_people:
+    type: unfeaturized
+    auto_fill: false
+  outdoor_seating:
+    type: unfeaturized
+    auto_fill: false
+  preferences:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+  subject:
+    type: text
+responses:
+  utter_ask_name:
+  - text: 성함을 입력해주세요
+  utter_ask_age:
+  - text: 나이를 입력해주세요
+  utter_ask_gender:
+  - text: 성별을 입력해주세요
+  utter_ask_id:
+  - text: 주민번호를 입력해주세요
+  utter_ask_disease:
+  - text: 과거 병력을 적어주세요
+  utter_ask_medicine:
+  - text: 복용 하고 계신 약물을 적어주세요
+  utter_ask_feedback:
+  - text: please give your feedback on your experience so far
+  utter_submit:
+  - text: 입력이 완료되었습니다!
+  utter_slots_values:
+  - text: "환자가 작성한 회원정보를 확인하세요.:\n - 이름: {name}\n - 나이: {age}\n - 성별: {gender}\n -\
+      \ 주민번호: {id}\n"
+  utter_noworries:
+  - text: you are welcome :)
+  utter_chitchat:
+  - text: chitchat
+  utter_ask_continue:
+  - text: do you want to continue?
+  utter_wrong_cuisine:
+  - text: cuisine type is not in the database, please try again
+  utter_wrong_num_people:
+  - text: number of people should be a positive integer, please try again
+  utter_wrong_outdoor_seating:
+  - text: could not convert input to boolean value, please try again
+  utter_default:
+  - text: sorry, I didn't understand you, please try input something else
+  utter_greet:
+  - text: Hello! I am restaurant search assistant! How can I help?
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_restart:
+  - text: restarted
+actions:
+- action_hello_world
+- action_question
+- utter_ask_name
+- utter_ask_age
+- utter_ask_gender
+- utter_ask_id
+- utter_ask_disease
+- utter_ask_medicine
+- utter_ask_feedback
+- utter_submit
+- utter_slots_values
+- utter_noworries
+- utter_chitchat
+- utter_ask_continue
+- utter_wrong_cuisine
+- utter_wrong_num_people
+- utter_wrong_outdoor_seating
+- utter_default
+- utter_greet
+- utter_iamabot
+- utter_restart
+- action_thanku
+- action_corona
+- action_gangdong
+- action_dencate
+- action_den1
+- action_densymp1
+- action_densymp2
+- action_densymp3
+- action_densymp4
+- action_correct1
+- action_correct2
+- action_denpart
+- action_den3
+- action_den4
+- action_den5
+- action_imagedenti
+- action_imagederma
+- action_derma4
+- action_derma1
+- action_derma3
+- action_derma2
+- action_Q_Date
+- action_show_schedule
+- action_reservation
+- action_Q_Reserve
+- action_re
+forms:
+- restaurant_form

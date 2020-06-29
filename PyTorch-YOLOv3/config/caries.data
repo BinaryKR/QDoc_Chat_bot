@@ -1,0 +1,6 @@
+classes=2
+train=data/caries/traindir.txt
+valid=data/caries/validdir.txt
+names=data/caries/caries.names
+backup=backup/
+eval=caries

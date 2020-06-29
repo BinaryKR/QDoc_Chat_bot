@@ -1,0 +1,4 @@
+/home/lab/PycharmProjects/untitled4/PyTorch-YOLOv3/data/derma/images/1.png
+/home/lab/PycharmProjects/untitled4/PyTorch-YOLOv3/data/derma/images/2.jpg
+/home/lab/PycharmProjects/untitled4/PyTorch-YOLOv3/data/derma/images/3.jpg
+/home/lab/PycharmProjects/untitled4/PyTorch-YOLOv3/data/derma/images/4.jpg

@@ -1,0 +1,6 @@
+classes=2
+train=data/derma/train.txt
+valid=data/derma/valid.txt
+names=data/derma/derma.names
+backup=backup/
+eval=Allergie

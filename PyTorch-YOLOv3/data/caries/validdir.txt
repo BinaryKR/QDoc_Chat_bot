@@ -1,0 +1,1 @@
+/home/lab/PycharmProjects/untitled4/PyTorch-YOLOv3/data/caries/images/1.jpg
